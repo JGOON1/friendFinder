@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Friend Finder - Survey</title>
+    <!-- Using Modal- Make sure the jQuery is on the top-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9"
+        crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <h2>Survey Questions</h2>
+        <hr>
+        <h3>
+            <strong>About You</strong>
+        </h3>
+        <form role='form'>
+            <div class='form-group'>
+                <label>
+                    <h4>Name (Required)</h4>
+                </label>
+                <input type='text' class='form-control Required' id='name'>
+
+                <label>
+                    <h4>Link to Photo Image (Required)</h4>
+                </label>
+                <input type='text' class='form-control Required' id='image'>
+            </div>
+        </form>
+        <hr>
+
+        <h3>Question 1</h3>
+        <h4>You value quality time together.</h4>
+        <form>
+            <select id='q1'>
+                <option value=''>--Select an Option--</option>
+                <option value='1'>1 (Strongly Disagree)</option>
+                <option value='2'>2</option>
+                <option value='3'>3</option>
+                <option value='4'>4</option>
+                <option value='5'>5 (Strongly Agree)</option>
+            </select>
+        </form>
+        <h3>Question 2</h3>
+        <h4>You have to spend a lot of time together.</h4>
+        <form>
+            <select id='q2' class="required">
+                <option value=''>--Select an Option--</option>
+                <option value='1'>1 (Strongly Disagree)</option>
+                <option value='2'>2</option>
+                <option value='3'>3</option>
+                <option value='4'>4</option>
+                <option value='5'>5 (Strongly Agree)</option>
+            </select>
+        </form>
+        <h3>Question 3</h3>
+        <h4>It is hard for you to relate to other people</h4>
+        <form>
+            <select id='q3' class="required">
+                <option value=''>--Select an Option--</option>
+                <option value='1'>1 (Strongly Disagree)</option>
+                <option value='2'>2</option>
+                <option value='3'>3</option>
+                <option value='4'>4</option>
+                <option value='5'>5 (Strongly Agree)</option>
+            </select>
+        </form>
+        <h3>Question 4</h3>
+        <h4>You would rather spend the night at home than out with people.</h4>
+        <form>
+            <select id='q4' class="required">
+                <option value=''>--Select an Option--</option>
+                <option value='1'>1 (Strongly Disagree)</option>
+                <option value='2'>2</option>
+                <option value='3'>3</option>
+                <option value='4'>4</option>
+                <option value='5'>5 (Strongly Agree)</option>
+            </select>
+        </form>
+        <h3>Question 5</h3>
+        <h4>You like being complimented.</h4>
+        <form>
+            <select id='q5' class="required">
+                <option value=''>--Select an Option--</option>
+                <option value='1'>1 (Strongly Disagree)</option>
+                <option value='2'>2</option>
+                <option value='3'>3</option>
+                <option value='4'>4</option>
+                <option value='5'>5 (Strongly Agree)</option>
+            </select>
+        </form>
+        <h3>Question 6</h3>
+        <h4>I put others wants before mine.</h4>
+        <form>
+            <select id='q6' class="required">
+                <option value=''>--Select an Option--</option>
+                <option value='1'>1 (Strongly Disagree)</option>
+                <option value='2'>2</option>
+                <option value='3'>3</option>
+                <option value='4'>4</option>
+                <option value='5'>5 (Strongly Agree)</option>
+            </select>
+        </form>
+        <h3>Question 7</h3>
+        <h4>I like to take charge</h4>
+        <form>
+            <select id='q7' class="required">
+                <option value=''>--Select an Option--</option>
+                <option value='1'>1 (Strongly Disagree)</option>
+                <option value='2'>2</option>
+                <option value='3'>3</option>
+                <option value='4'>4</option>
+                <option value='5'>5 (Strongly Agree)</option>
+            </select>
+        </form>
+        <h3>Question 8</h3>
+        <h4>You tend to focus on the little details than the big picture</h4>
+        <form>
+            <select id='q8' class="required">
+                <option value=''>--Select an Option--</option>
+                <option value='1'>1 (Strongly Disagree)</option>
+                <option value='2'>2</option>
+                <option value='3'>3</option>
+                <option value='4'>4</option>
+                <option value='5'>5 (Strongly Agree)</option>
+            </select>
+        </form>
+        <h3>Question 9</h3>
+        <h4>You respect everyone's idea</h4>
+        <form>
+            <select id='q9' class="required">
+                <option value=''>--Select an Option--</option>
+                <option value='1'>1 (Strongly Disagree)</option>
+                <option value='2'>2</option>
+                <option value='3'>3</option>
+                <option value='4'>4</option>
+                <option value='5'>5 (Strongly Agree)</option>
+            </select>
+        </form>
+        <h3>Question 10</h3>
+        <h4>I like to work on things myself than with others.</h4>
+        <form>
+            <select id='ques10' class="required">
+                <option value=''>--Select an Option--</option>
+                <option value='1'>1 (Strongly Disagree)</option>
+                <option value='2'>2</option>
+                <option value='3'>3</option>
+                <option value='4'>4</option>
+                <option value='5'>5 (Strongly Agree)</option>
+            </select>
+        </form>
+        <br>
+
+
+        <!-- Trigger the modal with a button    data-toggle="modal" data-target="#myModal"  -->
+
+        <button type="button" class="btn btn-primary btn-block" id="submit">Submit</button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" role="dialog">
+            <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Closest Match!</h4>
+                    </div>
+                    <div class="modal-body" id="photoGoesHere">
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Modal FOR VALIDATION! -->
+        <div class="modal fade" id="myModal1" role="dialog">
+            <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h1 class="modal-title" style='text-align: center'>ERROR!</h1>
+                    </div>
+                    <div class="modal-body" id="error">
+                        <h4 style='text-align: center'>Please fill out all fields before submitting!!!</h4>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!--    000000000000000000000   -->
+        <hr>
+
+        <div>
+            <a href="/api/friendsList">API Friends List </a>|
+            <a href="#"> Github Repo</a>
+        </div>
+        <br>
+    </div>
+
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#submitBtn").on("click", function () {
+                //form validation
+                function validateForm() {
+                    var isValid = true;
+                    $('.validate').each(function () {
+                        if ($(this).val() === '') {
+                            isValid = false;
+                        }
+                    });
+                    $('.browser-default').each(function () {
+                        if ($(this).val() === "") {
+                            isValid = false;
+                        }
+                    });
+                    return isValid;
+                }
+                if (validateForm() == true) {
+                    var newFriend = {
+                        name: $('#name').val().trim(),
+                        profilePic: $('#photo').val().trim(),
+                        scores: [
+                            $('#q1').val(),
+                            $('#q2').val(),
+                            $('#q3').val(),
+                            $('#q4').val(),
+                            $('#q5').val(),
+                            $('#q6').val(),
+                            $('#q7').val(),
+                            $('#q8').val(),
+                            $('#q9').val(),
+                            $('#q10').val(),
+                        ]
+                    };
+                    var currentURL = window.location.origin;
+                    $.post(currentURL + "/api/friends", newFriend, function (data) {
+                        $("#matchName").text(data.name);
+                        $("#matchPic").attr("src", data.profilePic);
+                    });
+                    $('.modal').modal();
+                    $('#name').val("");
+                    $('#photo').val("");
+                    $('#q1').val("");
+                    $('#q2').val("");
+                    $('#q3').val("");
+                    $('#q4').val("");
+                    $('#q5').val("");
+                    $('#q6').val("");
+                    $('#q7').val("");
+                    $('#q8').val("");
+                    $('#q9').val("");
+                    $('#q10').val("");
+                } else {
+                    alert("All fields need to be filled in.")
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
