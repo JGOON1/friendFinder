@@ -8,6 +8,7 @@ module.exports = function(app){
     app.post("/api/friends", function(req, res){
         var newFriendScores = req.body.scores;
         var scoresArray = [];
+        var friendList = [];
         var bestMatch = 0;
 
         for (var i = 0; i < friendList.length; i++){

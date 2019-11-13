@@ -1,7 +1,3 @@
-// ==============================================================================
-// DEPENDENCIES
-// Series of npm packages that we will use to give our server useful functionality
-// ==============================================================================
 
 var express = require("express");
 var path = require("path");
@@ -14,8 +10,8 @@ app.use(express.json());
 
 
 
-require("./app/routing/apiRoutes")(app);
-require("./app/routing/htmlRoutes")(app);
+require("../friendFinder/app/routing/apiRoutes")(app);
+require("../friendFinder/app/routing/htmlRoutes")(app);
 
 
 app.listen(PORT, function() {
