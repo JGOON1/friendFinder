@@ -10,8 +10,9 @@ app.use(express.json());
 
 
 
-require("../friendFinder/app/routing/apiRoutes")(app);
-require("../friendFinder/app/routing/htmlRoutes")(app);
+require(path.join(__dirname + "/app/routing/apiRoutes"))(app);
+require(path.join(__dirname + "/app/routing/htmlRoutes"))(app);
+
 
 
 app.listen(PORT, function() {
